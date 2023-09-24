@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="./assets/Untitled design.png" alt="" >
+            <div id="clockdate">
+                <div class="clockdate-wrapper">
+                  <div id="clock"></div>
+                  <div id="date"></div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="img">
+                <img src="./assets/Untitled design - Copy.png" alt="">
+            </div>
+            <div class="title">
+                <h1>TO-DO LIST</h1>
+            </div>
+            <div class="task">
+                <p>*Click One Time To Show Done And Double Click To Delete Task.</p>
+                <button class="addBtn" onclick="newElement()">+</button>
+                <input type="text" name="ListItem" placeholder="Enter Task" id="myInput" >
+            </div>
+        </div>
+        <ul id="myUL">
+        
+        </ul>
+    </div>
+    <footer>
+        <h3>Designed And Created With &hearts; By Darshil Laloriya.</h3>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

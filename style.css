@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	color: #e7eaf6;
+	background: #ACAEEE;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    display: grid;
+}
+.top{
+    grid-column: 0 / 8;
+    grid-row: 1 /3;
+}
+.top img{
+    width: 100%;
+    height: 250px;
+}
+#clockdate{
+   position: relative;
+   bottom: 150px;
+}
+.clockdate-wrapper {
+   background-color: #F6F1E0;
+    padding:20px 50px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:50px;
+    margin:0 auto;
+    color: #000;
+  
+}
+#clock{
+    font-size:35px;
+    text-shadow:0px 0px 1px #fff;
+    border-bottom: 4px solid #E9B824;
+    font-family: 'Black Ops One', cursive;
+}
+#clock span {
+    font-size:25px;
+    font-family: 'Black Ops One', cursive;
+}
+#date {
+    letter-spacing:3px;
+    font-size:16px;
+    font-family: 'Tourney', cursive;
+    margin-top: 8px;
+}
+.intro{
+  width: 700px;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.img{
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    width: 200px;
+    height: 200px;
+}
+.title{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    display: flex;
+    align-items: end; 
+}
+.title h1{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    color: #D83F31;
+}
+.task{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-family: 'Black Ops One', cursive;
+    font-size: 24px;
+}
+.task p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.task .addBtn{
+    background-color: #E9B824;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.task input{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    color: #D83F31;
+    border-color: transparent;
+    position: relative;
+    bottom: 53px;
+    left: 30px;
+    font-size: 24px;
+    font-family: 'Tourney', cursive;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+ul{
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Tourney', cursive;
+    list-style: none;
+}
+li{
+    padding: 10px;
+    text-transform: capitalize;
+}
+li input{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+ul li::before {
+    content: '📝 ';
+}
+ul li.checked {
+    background: transparent;
+    color: #D83F31;
+    text-decoration: line-through;
+}
+ul li.strick{
+    display: none;
+}
+footer{
+    background-color: #fff;
+    color: #D83F31;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
