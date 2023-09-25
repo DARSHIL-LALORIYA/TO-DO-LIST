@@ -33,35 +33,6 @@ startTime();
 
 
 
-
-// $(document).ready(
-//     function(){
-//         $('.addBtn').click(
-//             function(){
-//                 var toAdd = $('input[name=ListItem]').val();
-//                  $('ul').append('<li>' + toAdd + '</li>');
-//             });
-       
-//        $("input[name=ListItem]").keyup(function(event){
-//           if(event.keyCode == 13){
-//             $(".addBtn").click();
-//           }         
-//       });
-      
-//       $(document).on('dblclick','li', function(){
-//         $(this).toggleClass('strike').fadeOut('slow');    
-//       });
-      
-//       $('input').focus(function() {
-//         $(this).val('');
-//       });
-      
-//       $('ul').sortable();  
-      
-//     }
-// );
-
-
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
