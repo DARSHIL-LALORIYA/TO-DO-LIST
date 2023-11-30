@@ -32,8 +32,8 @@ function checkTime(i) {
 startTime();
 
 
-
-function newElement() {
+// code to add on using input
+function addOne() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
@@ -47,17 +47,18 @@ function newElement() {
 
 }
 
+// code to delete one using double click
+let del = document.querySelector('ul');
+del.addEventListener('dblclick', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.parentNode.removeChild(ev.target);
+  }
+});
 
-
-
-// strick code
+// code to strick through li
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
-
-$(document).on('dblclick','li', function(){
- $(this).toggleClass('strike').fadeOut('slow');    
-});
