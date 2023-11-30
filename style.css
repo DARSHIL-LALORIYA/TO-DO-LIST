@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 body {
+	zoom : 80%;
 	margin: 0;
 	color: #e7eaf6;
 	background: #ACAEEE;
